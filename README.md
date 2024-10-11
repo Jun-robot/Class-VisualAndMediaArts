@@ -1,2 +1,2 @@
 # Class-VisualAndMediaArts
-2024秋学期 授業用
+2024秋学期 視覚メディア表現
