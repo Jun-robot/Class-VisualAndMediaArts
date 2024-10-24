@@ -18,15 +18,16 @@ void CTRL::read(void){
 		// Serial.print("dsadsa");
 	}
 	if(SER->available()){
+			digitalWrite(2, HIGH);
 		// do{
 		// 	byte n = SER->read();
 		// }while(n != 250);
 		byte mydata = SER->read();
 		if(mydata == 250){
 			// Serial.print("250kitaaa");
-			byte raw_receive_data[12] = {0,0,0,0,0,0,0,0,0,0,0,0};
+			byte raw_receive_data[4] = {0,0,0,0};
 			bool receive_bad_flg = 0; //受信失敗フラグ
-			for(int i=0; i<12; i++){
+			for(int i=0; i<4; i++){
 				if(SER->available()){
 					raw_receive_data[i] = SER->read();
 					if(raw_receive_data[i] == 250){
@@ -44,10 +45,10 @@ void CTRL::read(void){
 				}
 			}
 			if(!receive_bad_flg){
-				for(int i=0; i<12; i++){
+				for(int i=0; i<4; i++){
 					data[i] = raw_receive_data[i];
 				}
-				for(int i=0; i<12; i++){
+				for(int i=0; i<4; i++){
 					// Serial.print(data[i]);
 					// Serial.print(" ");
 				}
@@ -56,5 +57,7 @@ void CTRL::read(void){
 				// Serial.print("receive_bad_flg");
 			}
 		}
+	}else{
+		digitalWrite(2, LOW);
 	}
 }

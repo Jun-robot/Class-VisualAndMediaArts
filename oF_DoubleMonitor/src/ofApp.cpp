@@ -2,12 +2,15 @@
 
 //--------------------------------------------------------------
 void ofApp::setup(){
-//    for(int n=0; n<NUM; n++){
-//        p[n].setup();
-//    }
     Particle tmp;
     tmp.setup();
     p.push_back(tmp);
+    
+    serial.listDevices();
+    serial.setup("/dev/tty.wchusbserial10", 115200);
+    
+    unsigned char myByte = 20;
+    serial.writeByte(myByte);
 }
 
 //--------------------------------------------------------------
@@ -18,7 +21,19 @@ void ofApp::update(){
         if(p[n].pos.x>ofGetWidth()||p[n].pos.x<0)p[n].speed.x*=-1.0;
         if(p[n].pos.y>ofGetHeight()||p[n].pos.y<0)p[n].speed.y*=-1.0;
     }
+    
+    hoge++;
+    send[0] = 00000000;
+    send[1] = 59;
+    send[2] = 40;
+    send[3] = 30;
 
+    serial.writeByte((unsigned char)250);
+    for(int i=0; i<4; i++){
+        if(send[i]==250)send[i]=251;
+        serial.writeByte(send[1]);
+    }
+    
 }
 
 //--------------------------------------------------------------

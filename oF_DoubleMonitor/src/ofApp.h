@@ -25,5 +25,10 @@ class ofApp : public ofBaseApp{
 		void gotMessage(ofMessage msg) override;
     
     vector<Particle> p;
-		
+    
+    ofSerial serial;
+    unsigned char send[4]={0, 0, 0, 0};
+    
+    
+    unsigned int hoge = 0;
 };
