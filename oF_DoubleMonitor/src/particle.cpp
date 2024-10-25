@@ -11,11 +11,15 @@ Particle::Particle(){
     
 }
 
-void Particle::setup(){
-    pos.set(ofRandom(ofGetWidth()), ofRandom(ofGetHeight()));
+void Particle::setup(int space){
+    if(space==0)pos.set(1115+756, 491);
+    if(space==1)pos.set(557, 410);
+    
+//    pos.set(ofRandom(ofGetWidth()), ofRandom(ofGetHeight()));
     speed.set(ofRandom(-3,3), ofRandom(-3,3));
     radius = 5;
     color.set(100,100,ofRandom(0,255));
+    
 }
 
 void Particle::update(){
@@ -27,5 +31,5 @@ void Particle::update(){
 }
 
 void Particle::draw(){
-    ofDrawCircle(pos.x, pos.y, radius);
+    if(is)ofDrawCircle(pos.x, pos.y, radius);
 }

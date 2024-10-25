@@ -22,8 +22,10 @@ public:
     ofColor color;
     float radius;
     
+    bool is=true;
+    
     //method
-    void setup();
+    void setup(int space);
     void update();
     void draw();
 };

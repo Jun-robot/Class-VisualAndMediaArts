@@ -24,11 +24,15 @@ class ofApp : public ofBaseApp{
 		void dragEvent(ofDragInfo dragInfo) override;
 		void gotMessage(ofMessage msg) override;
     
-    vector<Particle> p;
+    vector<Particle> pA;
+    vector<Particle> pB;
+    bool selct=0;
     
     ofSerial serial;
-    unsigned char send[16]={0};
+    unsigned char send[4]={0};
     
+    bool ledFlg[4]={false, false, false, false};
+    int ledNum[4]={0,0,0,0};
     
     unsigned int hoge = 0;
 };
