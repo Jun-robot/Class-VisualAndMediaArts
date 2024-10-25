@@ -35,15 +35,14 @@ void led_set_all(int Hue, int Sat, int Bri);
 void loop() {
 	ser_ctrl.read();
 
+	led_set_all(200,200,20);
+
 	for(int i=0; i<4; i++){
-		if(ser_ctrl.data[i]==1){
-			led_set_all(250,100,20);
-			led_set(0, i*15, 0, 0, 255);
+		if(ser_ctrl.data[i]!=0){
+			if(i<2)led_set(0, ser_ctrl.data[i], 0, 0, 255);
+			else led_set(1, ser_ctrl.data[i], 0, 0, 255);
 		}
 	}
-
-	led_set_all(250,100,20);
-	led_set(0, ser_ctrl.data[0], 0, 0, 255);
 
 	FastLED.show();
 	delay(10);

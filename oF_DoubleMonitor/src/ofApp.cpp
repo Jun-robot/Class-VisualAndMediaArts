@@ -73,9 +73,9 @@ void ofApp::mousePressed(int x, int y, int button){
     
     hoge++;
     send[0] = hoge;
-    send[1] = 59;
-    send[2] = 20;
-    send[3] = 30;
+    send[1] = 59-hoge;
+    send[2] = 20+hoge;
+    send[3] = 30-hoge;
     
     serial.writeByte((unsigned char)250);
     for(int i=0; i<4; i++){
