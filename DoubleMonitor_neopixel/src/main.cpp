@@ -16,7 +16,6 @@ CRGB ledA[NUM_LEDS];
 CRGB ledB[NUM_LEDS];
 CRGB ledC[40];
 
-
 void setup() {
 	ser_ctrl.init();
 	
@@ -31,24 +30,19 @@ void setup() {
 }
 
 void led_set(int tape_n, int num, int H, int S, int V);
-void led_set_high(int High, int Hue, int Sat, int Bri);
 void led_set_all(int Hue, int Sat, int Bri);
-void led_set_star(int High, int Hue, int Sat, int Bri, bool isDown);
-void led_set_band(int center, int width, int Hue, int Sat, int Bri);
-
-int t=0;
-byte mydata = 0;
 
 void loop() {
 	ser_ctrl.read();
 
-	t++;
-	for(int i=0; i<60; i++){
-		led_set(0, i, (t+i*4)%255, 255, 55);
-		led_set(1, i, (t+i*4+120)%255, 255, 55);
-		// ledA[i] = CHSV(255, 150, 15);
+	for(int i=0; i<4; i++){
+		if(ser_ctrl.data[i]==1){
+			led_set_all(250,100,20);
+			led_set(0, i*15, 0, 0, 255);
+		}
 	}
 
+	led_set_all(250,100,20);
 	led_set(0, ser_ctrl.data[0], 0, 0, 255);
 
 	FastLED.show();
@@ -69,55 +63,13 @@ void led_set(int tape_n, int num, int H, int S, int V){
 	}
 }
 
-void led_set_high(int High, int Hue, int Sat, int Bri){
-	for(int num=0;num<58;num++){
-		if(num<High){
-			for(int tape_num=0; tape_num<6; tape_num++){
-				led_set(tape_num, num, Hue, Sat, Bri);
-			}
-		}
-	}
-}
-
 
 void led_set_all(int Hue, int Sat, int Bri){
-	for(int tape_num=0;tape_num<6;tape_num++){
-		for(int led_num=0; led_num<58;led_num++){
+	for(int tape_num=0;tape_num<2;tape_num++){
+		for(int led_num=0; led_num<60;led_num++){
 			led_set(tape_num, led_num, Hue, Sat, Bri);
 		}
 	}
 }
 
-
-
-void led_set_star(int High, int Hue, int Sat, int Bri, bool isDown){
-	if(isDown == 0){
-		for(int tape_num=0; tape_num<6; tape_num++){
-			led_set(tape_num, High, Hue, Sat, Bri);
-			led_set(tape_num, High-1, Hue, Sat*0.7, Bri*0.7);
-			led_set(tape_num, High-2, Hue, Sat*0.5, Bri*0.5);
-			led_set(tape_num, High-3, Hue, Sat*0.3, Bri*0.3);
-			led_set(tape_num, High-4, Hue, Sat*0.1, Bri*0.2);
-		}
-	}else{
-		for(int tape_num=0; tape_num<6; tape_num++){
-			led_set(tape_num, High, Hue, Sat, Bri);
-			led_set(tape_num, High+1, Hue, Sat*0.7, Bri*0.7);
-			led_set(tape_num, High+2, Hue, Sat*0.5, Bri*0.5);
-			led_set(tape_num, High+3, Hue, Sat*0.3, Bri*0.3);
-			led_set(tape_num, High+4, Hue, Sat*0.1, Bri*0.2);
-		}
-	}
-}
-
-
-void led_set_band(int center, int width, int Hue, int Sat, int Bri){
-	int myfrom = center - width/2;
-	int myto = center + width/2;
-	for(int tape_num=0; tape_num<6; tape_num++){
-		for(int led_num=myfrom; led_num<=myto; led_num++){
-			led_set(tape_num, led_num, Hue, Sat, Bri);
-		}
-	}
-}
 

@@ -7,7 +7,7 @@ void ofApp::setup(){
     p.push_back(tmp);
     
     serial.listDevices();
-    serial.setup("/dev/tty.wchusbserial10", 230400);
+    serial.setup("/dev/tty.wchusbserial210", 230400);
     
 }
 
@@ -72,9 +72,9 @@ void ofApp::mousePressed(int x, int y, int button){
     
     
     hoge++;
-    send[0] = hoge%=60;
+    send[0] = hoge;
     send[1] = 59;
-    send[2] = 40;
+    send[2] = 20;
     send[3] = 30;
     
     serial.writeByte((unsigned char)250);
