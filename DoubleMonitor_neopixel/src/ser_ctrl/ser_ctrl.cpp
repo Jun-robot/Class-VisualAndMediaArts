@@ -6,7 +6,7 @@ CTRL::CTRL(HardwareSerial* ptr_serial){
 }
 
 void CTRL::init(void){
-	SER->begin(115200);
+	SER->begin(230400);
 }
 
 void CTRL::read(void){

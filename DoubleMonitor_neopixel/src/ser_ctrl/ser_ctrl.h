@@ -14,7 +14,7 @@ class CTRL{
 		void init(void);
 		void read(void);
 
-		byte data[4] = {0,0,0,0};
+		byte data[16] = {0};
 
 };
 
