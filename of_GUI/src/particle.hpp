@@ -21,12 +21,12 @@ public:
     ofVec2f pos;
     ofVec2f speed;
     ofColor color;
-    float radius;
     
     //method
     void setup(int x, int y);
     void update();
-    void draw();
+    void draw(float rad);
+    void setColor(ofColor mycolor);
 };
 
 

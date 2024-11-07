@@ -2,12 +2,18 @@
 
 //--------------------------------------------------------------
 void ofApp::setup(){
+    ofEnableAlphaBlending();
     ofBackground(100,100,100);
     
     gui.setup();
     gui.setPosition(50, 500);
-    gui.add(backgroundColor.set("BGColor", ofColor(0,0,0),ofColor(0,0,0), ofColor(255,255,255)));
+    gui.add(backgroundColor.set("BGColor", ofColor(40,40,40), ofColor(0,0,0), ofColor(255,255,255)));
+    gui.add(particleColor.set("particleColor", ofColor(240,240,240), ofColor(0,0,0), ofColor(255,255,255)));
+    gui.add(radius.set("radius", 5.0, 0.0, 50.0)); // name, default value, min, max
+    gui.add(particleNum.set("particleNum", 3, 0, 1000.0)); // name, default value, min, max
 
+
+    
     fbo.allocate(mywidth, myheigh);
     
     serial.listDevices();
@@ -27,18 +33,26 @@ void ofApp::update(){
         if(p[n].pos.y>myheigh||p[n].pos.y<0)p[n].speed.y*=-1.0;
     }
     
+    for (int n = p.size()-1; n>=0; --n) {  // 後ろから順にチェック
+        if (p[n].pos.x<50 && p[n].pos.y<50) {
+            p.erase(p.begin() + n);
+        }
+        if (p[n].pos.x>mywidth-50 && p[n].pos.y<50) {
+            p.erase(p.begin() + n);
+        }
+    }
+    particleNum = p.size();
+    
     
     //fboを設定しますーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
     fbo.begin();
     ofClear(0,0,0);
-    ofBackground(100, 200, 100);
-    ofSetColor(backgroundColor);
-    
-    ofDrawCircle(mywidth/2, myheigh/2, 100);
+    ofBackground(backgroundColor);
     
     for(int n=0; n < p.size(); n++){
+        p[n].setColor(particleColor);
         ofSetColor(p[n].color);
-        p[n].draw();
+        p[n].draw( radius );
         
         for(int k=n; k<p.size(); k++){
             float length = sqrt((p[n].pos.x - p[k].pos.x)*(p[n].pos.x - p[k].pos.x)

@@ -27,10 +27,7 @@ void ofApp::update(){
         if(pA[n].pos.y>982||pA[n].pos.y<0)pA[n].speed.y*=-1.0;
         
         if(pA[n].pos.x<1115 && pA[n].pos.y<0+200){
-            pA[n].is = false;
-            A_ue_flg = true;
-        }
-        if(pA[n].pos.x<1115 && pA[n].pos.y>982-200){
+
             pA[n].is = false;
             A_shita_flg = true;
         };

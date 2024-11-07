@@ -12,12 +12,9 @@ Particle::Particle(){
 }
 
 void Particle::setup(int x, int y){
-    
     pos.set(x, y);
     speed.set(ofRandom(-3,3), ofRandom(-3,3));
-    radius = 5;
-    color.set(100,100,ofRandom(0,255));
-    
+    color.set(0,0,0);
 }
 
 void Particle::update(){
@@ -28,6 +25,11 @@ void Particle::update(){
     //神の目が必要だとしたら（知覚できていない）ofAppのほうでやるべき
 }
 
-void Particle::draw(){
-    ofDrawCircle(pos.x, pos.y, radius);
+void Particle::setColor(ofColor mycolor){
+    mycolor.a = 220;
+    color.set(mycolor);
+}
+
+void Particle::draw(float rad){
+    ofDrawCircle(pos.x, pos.y, rad);
 }

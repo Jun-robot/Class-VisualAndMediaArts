@@ -31,6 +31,9 @@ class ofApp : public ofBaseApp{
     //GUI
     ofxPanel gui;
     ofParameter<ofColor> backgroundColor;
+    ofParameter<ofColor> particleColor;
+    ofParameter<float> radius;
+    ofParameter<int> particleNum;
     
     //FrameBufferObject
     ofFbo fbo;
