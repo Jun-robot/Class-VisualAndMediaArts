@@ -2,6 +2,7 @@
 
 #include "ofMain.h"
 #include "ofxGui.h"
+#include "particle.hpp"
 
 
 class ofApp : public ofBaseApp{
@@ -24,9 +25,20 @@ class ofApp : public ofBaseApp{
         void windowResized(int w, int h) override;
         void dragEvent(ofDragInfo dragInfo) override;
         void gotMessage(ofMessage msg) override;
-        
+    
+    vector<Particle> p;
+    
+    //GUI
     ofxPanel gui;
     ofParameter<ofColor> backgroundColor;
     
+    //FrameBufferObject
     ofFbo fbo;
+    int mywidth = 1115; //1512;
+    int myheigh = 820; //982;
+    
+    //Serial
+    ofSerial serial;
+    unsigned char send[4]={0};
+    
 };
