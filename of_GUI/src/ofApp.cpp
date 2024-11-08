@@ -7,9 +7,9 @@ void ofApp::setup(){
     
     gui.setup();
     gui.setPosition(50, 500);
-    gui.add(backgroundColor.set("BGColor", ofColor(40,40,40), ofColor(0,0,0), ofColor(255,255,255)));
+    gui.add(backgroundColor.set("BGColor", ofColor(20,20,20), ofColor(0,0,0), ofColor(255,255,255)));
     gui.add(particleColor.set("particleColor", ofColor(240,240,240), ofColor(0,0,0), ofColor(255,255,255)));
-    gui.add(radius.set("radius", 5.0, 0.0, 50.0)); // name, default value, min, max
+    gui.add(radius.set("radius", 20.0, 0.0, 50.0)); // name, default value, min, max
     gui.add(particleNum.set("particleNum", 3, 0, 1000.0)); // name, default value, min, max
 
 
@@ -17,10 +17,10 @@ void ofApp::setup(){
     fbo.allocate(mywidth, myheigh);
     
     serial.listDevices();
-    serial.setup("/dev/tty.wchusbserial210", 115200);
+    serial.setup("/dev/tty.wchusbserial110", 115200);
     
     Particle tmp;
-    tmp.setup(mywidth/2, myheigh/2);
+    tmp.setup(mywidth/2, myheigh/2, ofRandom(-3,3) , ofRandom(-3,3));
     p.push_back(tmp);
 }
 
@@ -32,16 +32,40 @@ void ofApp::update(){
         if(p[n].pos.x>mywidth||p[n].pos.x<0)p[n].speed.x*=-1.0;
         if(p[n].pos.y>myheigh||p[n].pos.y<0)p[n].speed.y*=-1.0;
     }
-    
     for (int n = p.size()-1; n>=0; --n) {  // 後ろから順にチェック
-        if (p[n].pos.x<50 && p[n].pos.y<50) {
+        if (p[n].pos.x<30 && p[n].pos.y<30) {//左上
             p.erase(p.begin() + n);
-        }
-        if (p[n].pos.x>mywidth-50 && p[n].pos.y<50) {
+            
+            LED foo;
+            foo.setup(0, 0.15);
+            l.push_back(foo);
+        }else if (p[n].pos.x>mywidth-30 && p[n].pos.y<30) {//右上
             p.erase(p.begin() + n);
+            
+            LED foo;
+            foo.setup(60, -0.15);
+            l.push_back(foo);
         }
     }
-    particleNum = p.size();
+    particleNum = l.size();//デバッグ用
+    
+    
+    for(int n=l.size()-1; n>=0; --n){
+        l[n].update();
+        if(l[n].speed>0 && l[n].pos>60){//右上
+            l.erase(l.begin()+n);
+            
+            Particle tmp;
+            tmp.setup(mywidth-40, 40, ofRandom(-3,0) , ofRandom(0,3));
+            p.push_back(tmp);
+        }else if(l[n].speed<0 && l[n].pos<-1.0){//左上
+            l.erase(l.begin()+n);
+            
+            Particle tmp;
+            tmp.setup(40, 40, ofRandom(0,3) , ofRandom(0,3));
+            p.push_back(tmp);
+        }
+    }
     
     
     //fboを設定しますーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
@@ -64,15 +88,36 @@ void ofApp::update(){
     fbo.end();
     //fboの設定が終わりましたよーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
     
+    //LEDを描画
+    for(int n=0; n<60; n++){
+        LedArray[n] = 0;
+    }
+    for(int n=0; n<l.size(); n++){
+        int a = l[n].getPos()%60;
+        LedArray[a] = 1;
+    }
+    
+    int LedPos[60] = {0};
+    int hoge=0;
+    for(int n=0; n<60; n++){
+        if(LedArray[n] == 1){
+            LedPos[hoge] = n;
+            hoge++;
+        }
+    }
+    
+    for(int n=0; n<4; n++){
+        send[n] = LedPos[n];
+    }
     
     
     // 通信
-    send[0]++;
     serial.writeByte((unsigned char)250);
     for(int i=0; i<4; i++){
         if(send[i]==250)send[i]=251;
         serial.writeByte(send[i]);
     }
+    printf("%d, %d, %d, %d \n",LedPos[0], LedPos[1], LedPos[2], LedPos[3]);
 }
 
 //--------------------------------------------------------------
@@ -112,8 +157,14 @@ void ofApp::mouseDragged(int x, int y, int button){
 //--------------------------------------------------------------
 void ofApp::mousePressed(int x, int y, int button){
     Particle tmp;
-    tmp.setup(mywidth/2, myheigh/2);
+    tmp.setup(mywidth/2, myheigh/2, ofRandom(-3,3) , ofRandom(-3,3));
     p.push_back(tmp);
+    
+//    LED foo;
+////    foo.setup(0, 0.3);
+//    foo.setup(60, -0.3);
+//    l.push_back(foo);
+    
 }
 
 //--------------------------------------------------------------

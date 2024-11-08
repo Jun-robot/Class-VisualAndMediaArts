@@ -23,7 +23,7 @@ public:
     ofColor color;
     
     //method
-    void setup(int x, int y);
+    void setup(int x, int y, float speedX, float speedY);
     void update();
     void draw(float rad);
     void setColor(ofColor mycolor);

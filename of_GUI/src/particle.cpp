@@ -11,9 +11,10 @@ Particle::Particle(){
     
 }
 
-void Particle::setup(int x, int y){
+void Particle::setup(int x, int y, float speedX, float speedY){
     pos.set(x, y);
-    speed.set(ofRandom(-3,3), ofRandom(-3,3));
+//    speed.set(ofRandom(-3,3) , ofRandom(-3,3));
+    speed.set(speedX, speedY);
     color.set(0,0,0);
 }
 

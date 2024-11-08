@@ -11,6 +11,7 @@
 		"2C513027-2AE5-4224-8ACB-A04C882F14F5" /* ofxToggle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = "792C364B-7E3F-4D67-ADD9-53B9AF9EFA37" /* ofxToggle.cpp */; };
 		"609B3035-85CB-412E-AC2C-EA7819F0971D" /* ofxButton.cpp in Sources */ = {isa = PBXBuildFile; fileRef = "6E817BD0-F37A-4787-B44C-63F9470CDCAE" /* ofxButton.cpp */; };
 		6CF9F7562CDD1BB9005E4629 /* particle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6CF9F7552CDD1BB9005E4629 /* particle.cpp */; };
+		6CF9F7592CDD8F66005E4629 /* led.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6CF9F7582CDD8F66005E4629 /* led.cpp */; };
 		"77A0DF98-D386-4373-B22F-0FD1AF18FF11" /* ofxInputField.cpp in Sources */ = {isa = PBXBuildFile; fileRef = "E07CCFAB-4E5A-4E2A-B6A2-EA0E1CB2688D" /* ofxInputField.cpp */; };
 		"91B33F9C-51BE-4E8B-808F-683B9143B6FA" /* ofxPanel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = "6E730556-B3EF-4FBE-A784-E5AB6BC798FC" /* ofxPanel.cpp */; };
 		"99B79365-37E1-48C1-B256-A4C78EDC098B" /* ofxSliderGroup.cpp in Sources */ = {isa = PBXBuildFile; fileRef = "ED9DCE2C-D217-4700-A4DE-02CB024D9949" /* ofxSliderGroup.cpp */; };
@@ -54,6 +55,8 @@
 		"676924D1-20F1-4BBE-9680-401548CE0D45" /* ofxSlider.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ofxSlider.cpp; path = ../../../addons/ofxGui/src/ofxSlider.cpp; sourceTree = SOURCE_ROOT; };
 		6CF9F7542CDD1BB9005E4629 /* particle.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = particle.hpp; sourceTree = "<group>"; };
 		6CF9F7552CDD1BB9005E4629 /* particle.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = particle.cpp; sourceTree = "<group>"; };
+		6CF9F7572CDD8F66005E4629 /* led.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = led.hpp; sourceTree = "<group>"; };
+		6CF9F7582CDD8F66005E4629 /* led.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = led.cpp; sourceTree = "<group>"; };
 		"6E730556-B3EF-4FBE-A784-E5AB6BC798FC" /* ofxPanel.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ofxPanel.cpp; path = ../../../addons/ofxGui/src/ofxPanel.cpp; sourceTree = SOURCE_ROOT; };
 		"6E817BD0-F37A-4787-B44C-63F9470CDCAE" /* ofxButton.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ofxButton.cpp; path = ../../../addons/ofxGui/src/ofxButton.cpp; sourceTree = SOURCE_ROOT; };
 		"7194C89D-621D-48DE-AB13-6E707FFD8603" /* ofxBaseGui.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ofxBaseGui.cpp; path = ../../../addons/ofxGui/src/ofxBaseGui.cpp; sourceTree = SOURCE_ROOT; };
@@ -158,6 +161,8 @@
 				E4B69E1F0A3A1BDC003C02F2 /* ofApp.h */,
 				6CF9F7542CDD1BB9005E4629 /* particle.hpp */,
 				6CF9F7552CDD1BB9005E4629 /* particle.cpp */,
+				6CF9F7572CDD8F66005E4629 /* led.hpp */,
+				6CF9F7582CDD8F66005E4629 /* led.cpp */,
 			);
 			path = src;
 			sourceTree = SOURCE_ROOT;
@@ -266,6 +271,7 @@
 				"E52372E8-FBA7-4870-8D44-9D4DDFC81A0D" /* ofxSlider.cpp in Sources */,
 				"99B79365-37E1-48C1-B256-A4C78EDC098B" /* ofxSliderGroup.cpp in Sources */,
 				"2C513027-2AE5-4224-8ACB-A04C882F14F5" /* ofxToggle.cpp in Sources */,
+				6CF9F7592CDD8F66005E4629 /* led.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

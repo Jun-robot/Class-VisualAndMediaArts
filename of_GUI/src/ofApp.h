@@ -3,6 +3,7 @@
 #include "ofMain.h"
 #include "ofxGui.h"
 #include "particle.hpp"
+#include "led.hpp"
 
 
 class ofApp : public ofBaseApp{
@@ -27,6 +28,10 @@ class ofApp : public ofBaseApp{
         void gotMessage(ofMessage msg) override;
     
     vector<Particle> p;
+    
+    //LED
+    int LedArray[60]={0};
+    vector<LED> l;
     
     //GUI
     ofxPanel gui;

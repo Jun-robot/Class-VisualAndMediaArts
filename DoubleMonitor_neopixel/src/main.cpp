@@ -35,12 +35,15 @@ void led_set_all(int Hue, int Sat, int Bri);
 void loop() {
 	ser_ctrl.read();
 
-	led_set_all(200,200,20);
+	led_set_all(0,0,0);
 
 	for(int i=0; i<4; i++){
+		// if(ser_ctrl.data[i]!=0){
+		// 	if(i<2)led_set(0, ser_ctrl.data[i], 0, 0, 255);
+		// 	else led_set(1, ser_ctrl.data[i], 0, 0, 255);
+		// }
 		if(ser_ctrl.data[i]!=0){
-			if(i<2)led_set(0, ser_ctrl.data[i], 0, 0, 255);
-			else led_set(1, ser_ctrl.data[i], 0, 0, 255);
+			led_set(0, ser_ctrl.data[i], 0, 0, 255);
 		}
 	}
 
