@@ -5,7 +5,6 @@
 #include "particle.hpp"
 #include "led.hpp"
 
-
 class ofApp : public ofBaseApp{
 
     public:
@@ -39,6 +38,13 @@ class ofApp : public ofBaseApp{
     ofParameter<ofColor> particleColor;
     ofParameter<float> radius;
     ofParameter<int> particleNum;
+    ofParameter<int> ledNum;
+    ofParameter<float> ledSpeed;
+    ofParameter<float> patSpeed;
+    ofParameter<unsigned char> sendA;
+    ofParameter<unsigned char> sendB;
+    ofParameter<unsigned char> sendC;
+    ofParameter<unsigned char> sendD;
     
     //FrameBufferObject
     ofFbo fbo;

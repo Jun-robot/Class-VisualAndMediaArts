@@ -16,14 +16,32 @@ void Particle::setup(int x, int y, float speedX, float speedY){
 //    speed.set(ofRandom(-3,3) , ofRandom(-3,3));
     speed.set(speedX, speedY);
     color.set(0,0,0);
+    setSpeedNoise();
+    for(int n=0; n<posN; n++){
+        prePos[n].set(pos.x, pos.y);
+    }
 }
 
 void Particle::update(){
-    pos += speed;
+    float a = speed.x * speedNoise.x*gain;
+    float b = speed.y * speedNoise.y*gain;
+    pos.x += a;
+    pos.y += b;
+    //    pos += speed;
     
-    //境界条件を入れるべきか否か（哲学的な話）
-    //このパーティクルたちは知覚できているのか
-    //神の目が必要だとしたら（知覚できていない）ofAppのほうでやるべき
+    for(int n=posN-1; 0<n; --n){
+        prePos[n] = prePos[n-1];
+    }
+    prePos[0] = pos;
+}
+
+void Particle::setSpeedNoise(){
+    speedNoise.set(ofNoise(ofRandom(0, 100.0)), ofNoise(ofRandom(0, 100.0)));
+}
+
+
+void Particle::setSpeedGain(float gain_){
+    gain = gain_;
 }
 
 void Particle::setColor(ofColor mycolor){
@@ -33,4 +51,9 @@ void Particle::setColor(ofColor mycolor){
 
 void Particle::draw(float rad){
     ofDrawCircle(pos.x, pos.y, rad);
+    
+    ofSetColor(255,255,255,250);
+    for(int n=0; n<posN; n++){
+        ofDrawCircle(prePos[n].x, prePos[n].y, rad-n*0.22);
+    }
 }

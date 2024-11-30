@@ -9,8 +9,15 @@ void ofApp::setup(){
     gui.setPosition(50, 500);
     gui.add(backgroundColor.set("BGColor", ofColor(20,20,20), ofColor(0,0,0), ofColor(255,255,255)));
     gui.add(particleColor.set("particleColor", ofColor(240,240,240), ofColor(0,0,0), ofColor(255,255,255)));
-    gui.add(radius.set("radius", 20.0, 0.0, 50.0)); // name, default value, min, max
-    gui.add(particleNum.set("particleNum", 3, 0, 1000.0)); // name, default value, min, max
+    gui.add(radius.set("radius", 20.0, 0.0, 50.0));
+    gui.add(particleNum.set("particleNum", 3, 0, 1000.0));
+    gui.add(ledNum.set("ledNum", 3, 0, 30));
+    gui.add(ledSpeed.set("ledSpeed", 0.15, 0.0, 0.3));
+    gui.add(patSpeed.set("patSpeed", 0.7, 0.0, 3.0));
+    gui.add(sendA.set("sendA", 3, 0, 60));
+    gui.add(sendB.set("sendB", 3, 0, 60));
+    gui.add(sendC.set("sendC", 3, 0, 60));
+    gui.add(sendD.set("sendD", 3, 0, 60));
 
 
     
@@ -27,7 +34,10 @@ void ofApp::setup(){
 //--------------------------------------------------------------
 void ofApp::update(){
     for(int n=0; n < p.size(); n++){
+        p[n].setSpeedGain(patSpeed);
+        p[n].setSpeedNoise();
         p[n].update();
+        
         //境界条件 バウンダリーコンディション
         if(p[n].pos.x>mywidth||p[n].pos.x<0)p[n].speed.x*=-1.0;
         if(p[n].pos.y>myheigh||p[n].pos.y<0)p[n].speed.y*=-1.0;
@@ -37,17 +47,18 @@ void ofApp::update(){
             p.erase(p.begin() + n);
             
             LED foo;
-            foo.setup(0, 0.15);
+            foo.setup(0, ledSpeed);
             l.push_back(foo);
         }else if (p[n].pos.x>mywidth-30 && p[n].pos.y<30) {//右上
             p.erase(p.begin() + n);
             
             LED foo;
-            foo.setup(60, -0.15);
+            foo.setup(60, -1.0 * ledSpeed);
             l.push_back(foo);
         }
     }
-    particleNum = l.size();//デバッグ用
+    particleNum = p.size();//デバッグ用
+    ledNum = l.size();//デバッグ用
     
     
     for(int n=l.size()-1; n>=0; --n){
@@ -75,14 +86,15 @@ void ofApp::update(){
     
     for(int n=0; n < p.size(); n++){
         p[n].setColor(particleColor);
+        
         ofSetColor(p[n].color);
         p[n].draw( radius );
         
-        for(int k=n; k<p.size(); k++){
-            float length = sqrt((p[n].pos.x - p[k].pos.x)*(p[n].pos.x - p[k].pos.x)
-            + abs(p[n].pos.y - p[k].pos.y)*abs(p[n].pos.y - p[k].pos.y));
-            if(length<400)ofDrawLine(p[n].pos.x, p[n].pos.y, p[k].pos.x, p[k].pos.y);
-        }
+//        for(int k=n; k<p.size(); k++){
+//            float length = sqrt((p[n].pos.x - p[k].pos.x)*(p[n].pos.x - p[k].pos.x)
+//            + abs(p[n].pos.y - p[k].pos.y)*abs(p[n].pos.y - p[k].pos.y));
+//            if(length<400)ofDrawLine(p[n].pos.x, p[n].pos.y, p[k].pos.x, p[k].pos.y);
+//        }
     }
     
     fbo.end();
@@ -117,7 +129,11 @@ void ofApp::update(){
         if(send[i]==250)send[i]=251;
         serial.writeByte(send[i]);
     }
-    printf("%d, %d, %d, %d \n",LedPos[0], LedPos[1], LedPos[2], LedPos[3]);
+    //デバッグ用
+    sendA = send[0];
+    sendB = send[1];
+    sendC = send[2];
+    sendD = send[3];
 }
 
 //--------------------------------------------------------------
