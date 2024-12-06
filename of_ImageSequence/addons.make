@@ -1,0 +1,3 @@
+ofxExportImageSequence
+ofxImageSequenceExport
+ofxPoco

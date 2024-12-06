@@ -1,0 +1,1249 @@
+{
+	"archiveVersion": "1",
+	"classes": {},
+	"objectVersion": "54",
+	"objects": {
+		"017146BA-E5C6-4682-9C9E-AF827E1EC604": {
+			"explicitFileType": "sourcecode.c.h",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "ripemd.h",
+			"path": "../../../addons/ofxPoco/libs/openssl/include/openssl/ripemd.h",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"0873706F-1174-4E7C-8525-18C431588CFA": {
+			"explicitFileType": "sourcecode.c.h",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "symhacks.h",
+			"path": "../../../addons/ofxPoco/libs/openssl/include/openssl/symhacks.h",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"09418018-D3F0-4433-B156-342D3A80F5E8": {
+			"explicitFileType": "sourcecode.c.h",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "ssl.h",
+			"path": "../../../addons/ofxPoco/libs/openssl/include/openssl/ssl.h",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"1017DB4D-0300-4D0C-92A6-1D4FB1F13AA6": {
+			"explicitFileType": "sourcecode.c.h",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "tiffconf.h",
+			"path": "../../../addons/ofxExportImageSequence/libs/libtiff/include/tiffconf.h",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"141AAF0F-25D7-41B9-B9C7-EBD68EA40038": {
+			"explicitFileType": "sourcecode.c.h",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "x509_vfy.h",
+			"path": "../../../addons/ofxPoco/libs/openssl/include/openssl/x509_vfy.h",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"14CEDA2C-A21C-4596-A8FD-782B9D9045F5": {
+			"explicitFileType": "sourcecode.c.h",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "dtls1.h",
+			"path": "../../../addons/ofxPoco/libs/openssl/include/openssl/dtls1.h",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"186EF2DC-03E5-4E12-A106-5D689F830BED": {
+			"explicitFileType": "sourcecode.c.h",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "cast.h",
+			"path": "../../../addons/ofxPoco/libs/openssl/include/openssl/cast.h",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"191CD6FA2847E21E0085CBB6": {
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"lastKnownFileType": "text.plist.entitlements",
+			"path": "of.entitlements",
+			"sourceTree": "<group>"
+		},
+		"191EF70929D778A400F35F26": {
+			"isa": "PBXFileReference",
+			"lastKnownFileType": "folder",
+			"name": "openFrameworks",
+			"path": "../../../libs/openFrameworks",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"19B789C429E5AB4A0082E9B8": {
+			"buildActionMask": "2147483647",
+			"files": [],
+			"inputFileListPaths": [],
+			"inputPaths": [],
+			"isa": "PBXShellScriptBuildPhase",
+			"outputFileListPaths": [],
+			"outputPaths": [],
+			"runOnlyForDeploymentPostprocessing": "0",
+			"shellPath": "/bin/sh",
+			"shellScript": "\"$OF_PATH/scripts/osx/xcode_project.sh\"\n",
+			"showEnvVarsInLog": "0"
+		},
+		"1C123231-62B2-4309-B9A8-C5DDB1B4695E": {
+			"explicitFileType": "sourcecode.c.h",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "mdc2.h",
+			"path": "../../../addons/ofxPoco/libs/openssl/include/openssl/mdc2.h",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"24CB5629-B35A-464E-BEF1-B9004696872D": {
+			"children": [
+				"F2963139-2461-4130-9A73-341A98980825",
+				"4D73893D-592F-4663-81F5-4AD57C97C498"
+			],
+			"isa": "PBXGroup",
+			"name": "ofxPoco",
+			"path": "../../../addons/ofxPoco",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"2622C463-9FFC-4953-B7F4-83A67D292D87": {
+			"explicitFileType": "sourcecode.c.h",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "safestack.h",
+			"path": "../../../addons/ofxPoco/libs/openssl/include/openssl/safestack.h",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"29B6DE79-1283-4EA5-9A83-ED75FE4D1690": {
+			"children": [
+				"48DAA1F0-CFC9-45B7-AF28-F590D3709C1C",
+				"E8383918-7E76-4644-AE61-B58F126610EB",
+				"D8F63EA7-87C7-415E-8E9F-08A075CF50BA",
+				"D25E303A-8992-4B88-A083-1ABBAAB8483C",
+				"A60FB00D-29EE-4B14-975E-80822913A603",
+				"BFF9814A-A0BC-4906-8ECD-49412C36026D",
+				"F33740C7-12A8-4F0C-95D5-3F785DCAC8E7",
+				"43964EB0-D6EC-4E91-A428-494D2804FBA1",
+				"8DA4CF96-758C-4523-A4CF-84FD0DBFCE04",
+				"383F870B-74F7-48FD-BB13-4D4C87254EC0",
+				"186EF2DC-03E5-4E12-A106-5D689F830BED",
+				"DD020AC3-8FAD-4157-8AE2-BEF9F4E2C4C9",
+				"39797B60-3B41-4B15-835C-82E2204765F6",
+				"C25419D3-A509-43BE-A49E-DC95CF45CCFC",
+				"ED93E6AE-F72F-480D-9620-F68A61DF0460",
+				"754F6EE8-E4B0-4263-A751-ADDC6A085453",
+				"4438AA8D-90B8-4F8A-9970-6C101A9FEE4F",
+				"B32C515F-C158-43D7-9A07-3984B05DF62D",
+				"9FF54AC6-E2E4-4728-A5DA-9127887731F8",
+				"87C3AF4E-172A-4253-9001-AE1F72DAA1AF",
+				"59B41A01-EECD-4992-B81A-0C01ACECF7DA",
+				"14CEDA2C-A21C-4596-A8FD-782B9D9045F5",
+				"9A62385E-82EB-4EB7-99E6-5A8F4CBF1AC4",
+				"AD5F6545-D1A7-461B-A916-C08032724C7D",
+				"34AB4D75-851B-43BC-BE17-FF11A4147BB6",
+				"88EB1307-160E-481B-B13B-1B95E8A4B5FF",
+				"9E32CABB-E4F4-40BD-93C5-3C670BA5B053",
+				"7D8971BB-312A-45FE-9D7D-DBCF17492EC2",
+				"65C4C4ED-DFF6-4177-89A8-462C691675F1",
+				"D6E6774F-5742-42CB-877F-CA550702C900",
+				"D782FCB6-2EF6-4B76-8704-AE668B2F422D",
+				"D2227CD7-CA6E-45B9-8E10-F25BD3CD8F8F",
+				"F70DF46F-C3E4-4D55-9E49-8DAB10C552C9",
+				"AC62E5CC-85B9-4BEF-9E75-72B9F0D498BF",
+				"CFA5D899-D7D2-4F08-BAF0-8DCDA31F1864",
+				"B1C85272-5E2D-405D-BFBE-7CADFD0D1C5A",
+				"8608806C-5C99-48E7-AF6C-3A767D7E051C",
+				"1C123231-62B2-4309-B9A8-C5DDB1B4695E",
+				"EE7FEFD4-247F-47F1-ACC9-A54585D8741E",
+				"40174198-E91A-46BD-8A84-7637D8F8E43A",
+				"58E3E9F6-BFAE-4D54-A1DE-48DC1F0A091B",
+				"584CF6AC-A308-45AA-9754-D05391620E40",
+				"4D634FE9-B0F9-42F8-9FDE-83DF166CCD2E",
+				"AA807E85-D202-4649-905D-961503AB6D8E",
+				"A556F9BD-9106-4E61-B2FB-04C2E3EAE512",
+				"EEDD02D1-0EA3-485F-820B-FA258BB031F5",
+				"2A6467F9-5AEB-4569-A8C1-00133804D23C",
+				"4EFDCB4D-18FD-496A-AC23-79376B3611A7",
+				"B1AD2777-B243-4885-9088-A7552ABFFC80",
+				"476BC4D0-BB72-4B4D-9253-BF872667E233",
+				"DC1FD2B0-B024-47B6-B827-BBFC987C06BB",
+				"B49B3F23-B40E-487F-8049-F9C454890C2C",
+				"F01388D5-887C-4D04-95BA-E077EB923A00",
+				"88E9F861-B882-4CB5-B1D0-19218B671788",
+				"017146BA-E5C6-4682-9C9E-AF827E1EC604",
+				"F6746CC8-402F-470C-8E17-79100682FFC2",
+				"2622C463-9FFC-4953-B7F4-83A67D292D87",
+				"F2EAB537-7B54-4B66-A4CE-226F3DAABE45",
+				"AE4BE8E8-FC3E-4A19-97F5-F0C450A49A68",
+				"C5F1A08B-9EB4-46D2-A1A8-EB9C8F47C9BC",
+				"3FD7F821-C46F-4E2E-9831-937EC82FE1A4",
+				"09418018-D3F0-4433-B156-342D3A80F5E8",
+				"95E6BFFC-5BAD-4CDC-A1B3-D3E559919936",
+				"97A67737-C27F-4DBD-8EBB-C0E1247CB2F7",
+				"F9997F93-060C-4428-941E-8DFE54EF965E",
+				"0873706F-1174-4E7C-8525-18C431588CFA",
+				"2A6477EF-89CB-4412-A3E8-DE7310DB5BDE",
+				"BA78FF73-2630-46B4-92FB-92DACA246929",
+				"9976E084-ABE4-4589-8B9E-DA594254A331",
+				"7C623A23-42D0-4C36-A11B-0312293E4709",
+				"CFCE20BB-D99F-4C12-AFF2-C8CFF441EBB7",
+				"866F8128-B8AC-4AA5-8E32-748DEF0865CF",
+				"141AAF0F-25D7-41B9-B9C7-EBD68EA40038",
+				"AE602A34-207B-407E-9AE6-23CD98339BC2"
+			],
+			"isa": "PBXGroup",
+			"name": "openssl",
+			"path": "../../../addons/ofxPoco/libs/openssl/include/openssl",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"2A6467F9-5AEB-4569-A8C1-00133804D23C": {
+			"explicitFileType": "sourcecode.c.h",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "pem.h",
+			"path": "../../../addons/ofxPoco/libs/openssl/include/openssl/pem.h",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"2A6477EF-89CB-4412-A3E8-DE7310DB5BDE": {
+			"explicitFileType": "sourcecode.c.h",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "tls1.h",
+			"path": "../../../addons/ofxPoco/libs/openssl/include/openssl/tls1.h",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"2F8EE760-A878-4154-AE20-73047ACB63EA": {
+			"explicitFileType": "sourcecode.c.h",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "ofxImageSequenceExport.h",
+			"path": "../../../addons/ofxImageSequenceExport/src/ofxImageSequenceExport.h",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"30A315CE-2970-4CB7-9883-96F07C19A119": {
+			"explicitFileType": "sourcecode.cpp.cpp",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "particle.cpp",
+			"path": "src/particle.cpp",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"34AB4D75-851B-43BC-BE17-FF11A4147BB6": {
+			"explicitFileType": "sourcecode.c.h",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "ec.h",
+			"path": "../../../addons/ofxPoco/libs/openssl/include/openssl/ec.h",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"383F870B-74F7-48FD-BB13-4D4C87254EC0": {
+			"explicitFileType": "sourcecode.c.h",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "camellia.h",
+			"path": "../../../addons/ofxPoco/libs/openssl/include/openssl/camellia.h",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"39797B60-3B41-4B15-835C-82E2204765F6": {
+			"explicitFileType": "sourcecode.c.h",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "cms.h",
+			"path": "../../../addons/ofxPoco/libs/openssl/include/openssl/cms.h",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"3AC6099D-EC77-4B22-8FBD-717E9AE6B21A": {
+			"explicitFileType": "sourcecode.cpp.cpp",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "ofxImageSequenceExport.cpp",
+			"path": "../../../addons/ofxImageSequenceExport/src/ofxImageSequenceExport.cpp",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"3B759575-7FD1-4ACF-807E-30672616F7E8": {
+			"children": [
+				"97E0F91B-871D-41A6-9206-B9053419282D",
+				"F3113A0B-67D0-4901-83C0-431B6530302E"
+			],
+			"isa": "PBXGroup",
+			"name": "ofxExportImageSequence",
+			"path": "../../../addons/ofxExportImageSequence",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"3FD7F821-C46F-4E2E-9831-937EC82FE1A4": {
+			"explicitFileType": "sourcecode.c.h",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "srtp.h",
+			"path": "../../../addons/ofxPoco/libs/openssl/include/openssl/srtp.h",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"40174198-E91A-46BD-8A84-7637D8F8E43A": {
+			"explicitFileType": "sourcecode.c.h",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "obj_mac.h",
+			"path": "../../../addons/ofxPoco/libs/openssl/include/openssl/obj_mac.h",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"4369046D-3707-4CF8-A7BC-A37961525627": {
+			"children": [
+				"29B6DE79-1283-4EA5-9A83-ED75FE4D1690"
+			],
+			"isa": "PBXGroup",
+			"name": "include",
+			"path": "../../../addons/ofxPoco/libs/openssl/include",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"43964EB0-D6EC-4E91-A428-494D2804FBA1": {
+			"explicitFileType": "sourcecode.c.h",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "bn.h",
+			"path": "../../../addons/ofxPoco/libs/openssl/include/openssl/bn.h",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"4438AA8D-90B8-4F8A-9970-6C101A9FEE4F": {
+			"explicitFileType": "sourcecode.c.h",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "crypto.h",
+			"path": "../../../addons/ofxPoco/libs/openssl/include/openssl/crypto.h",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"476BC4D0-BB72-4B4D-9253-BF872667E233": {
+			"explicitFileType": "sourcecode.c.h",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "pkcs7.h",
+			"path": "../../../addons/ofxPoco/libs/openssl/include/openssl/pkcs7.h",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"48DAA1F0-CFC9-45B7-AF28-F590D3709C1C": {
+			"explicitFileType": "sourcecode.c.h",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "aes.h",
+			"path": "../../../addons/ofxPoco/libs/openssl/include/openssl/aes.h",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"4D634FE9-B0F9-42F8-9FDE-83DF166CCD2E": {
+			"explicitFileType": "sourcecode.c.h",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "opensslconf.h",
+			"path": "../../../addons/ofxPoco/libs/openssl/include/openssl/opensslconf.h",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"4D73893D-592F-4663-81F5-4AD57C97C498": {
+			"children": [
+				"7E11C835-028C-4931-89FD-E68EF38149DD",
+				"DD79B390-1FE6-435B-9EC0-D77A77D4592E"
+			],
+			"isa": "PBXGroup",
+			"name": "src",
+			"path": "../../../addons/ofxPoco/src",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"4EFDCB4D-18FD-496A-AC23-79376B3611A7": {
+			"explicitFileType": "sourcecode.c.h",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "pem2.h",
+			"path": "../../../addons/ofxPoco/libs/openssl/include/openssl/pem2.h",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"55D86F5D-58A6-4C2E-A89B-8ED497F8C717": {
+			"fileRef": "7E11C835-028C-4931-89FD-E68EF38149DD",
+			"isa": "PBXBuildFile"
+		},
+		"584CF6AC-A308-45AA-9754-D05391620E40": {
+			"explicitFileType": "sourcecode.c.h",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "ocsp.h",
+			"path": "../../../addons/ofxPoco/libs/openssl/include/openssl/ocsp.h",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"58E3E9F6-BFAE-4D54-A1DE-48DC1F0A091B": {
+			"explicitFileType": "sourcecode.c.h",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "objects.h",
+			"path": "../../../addons/ofxPoco/libs/openssl/include/openssl/objects.h",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"59B41A01-EECD-4992-B81A-0C01ACECF7DA": {
+			"explicitFileType": "sourcecode.c.h",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "dsa.h",
+			"path": "../../../addons/ofxPoco/libs/openssl/include/openssl/dsa.h",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"65C4C4ED-DFF6-4177-89A8-462C691675F1": {
+			"explicitFileType": "sourcecode.c.h",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "err.h",
+			"path": "../../../addons/ofxPoco/libs/openssl/include/openssl/err.h",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"754F6EE8-E4B0-4263-A751-ADDC6A085453": {
+			"explicitFileType": "sourcecode.c.h",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "conf_api.h",
+			"path": "../../../addons/ofxPoco/libs/openssl/include/openssl/conf_api.h",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"75A11297-8D95-4D92-B6BB-94A6028D4A8C": {
+			"explicitFileType": "sourcecode.cpp.cpp",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "ofxExportImageSequence.cpp",
+			"path": "../../../addons/ofxExportImageSequence/src/ofxExportImageSequence.cpp",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"7C623A23-42D0-4C36-A11B-0312293E4709": {
+			"explicitFileType": "sourcecode.c.h",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "ui.h",
+			"path": "../../../addons/ofxPoco/libs/openssl/include/openssl/ui.h",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"7D8971BB-312A-45FE-9D7D-DBCF17492EC2": {
+			"explicitFileType": "sourcecode.c.h",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "engine.h",
+			"path": "../../../addons/ofxPoco/libs/openssl/include/openssl/engine.h",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"7E11C835-028C-4931-89FD-E68EF38149DD": {
+			"explicitFileType": "sourcecode.cpp.cpp",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "ofxXmlPoco.cpp",
+			"path": "../../../addons/ofxPoco/src/ofxXmlPoco.cpp",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"84C4DCAE-CEB2-4062-970A-4739315BF606": {
+			"children": [
+				"8B44F241-28D1-49AF-B83B-4A676BE98E8E"
+			],
+			"isa": "PBXGroup",
+			"name": "libtiff",
+			"path": "../../../addons/ofxExportImageSequence/libs/libtiff",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"8608806C-5C99-48E7-AF6C-3A767D7E051C": {
+			"explicitFileType": "sourcecode.c.h",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "md5.h",
+			"path": "../../../addons/ofxPoco/libs/openssl/include/openssl/md5.h",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"866F8128-B8AC-4AA5-8E32-748DEF0865CF": {
+			"explicitFileType": "sourcecode.c.h",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "x509.h",
+			"path": "../../../addons/ofxPoco/libs/openssl/include/openssl/x509.h",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"87C3AF4E-172A-4253-9001-AE1F72DAA1AF": {
+			"explicitFileType": "sourcecode.c.h",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "dh.h",
+			"path": "../../../addons/ofxPoco/libs/openssl/include/openssl/dh.h",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"88E9F861-B882-4CB5-B1D0-19218B671788": {
+			"explicitFileType": "sourcecode.c.h",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "rc5.h",
+			"path": "../../../addons/ofxPoco/libs/openssl/include/openssl/rc5.h",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"88EB1307-160E-481B-B13B-1B95E8A4B5FF": {
+			"explicitFileType": "sourcecode.c.h",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "ecdh.h",
+			"path": "../../../addons/ofxPoco/libs/openssl/include/openssl/ecdh.h",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"8B44F241-28D1-49AF-B83B-4A676BE98E8E": {
+			"children": [
+				"F6F70B96-C7E9-43AB-98E2-BAFBDB765DE3",
+				"1017DB4D-0300-4D0C-92A6-1D4FB1F13AA6",
+				"903F70F4-0323-4D34-B42A-56DEFF4E9D44",
+				"FD09A201-EF22-4F31-A109-ED9A266F5604"
+			],
+			"isa": "PBXGroup",
+			"name": "include",
+			"path": "../../../addons/ofxExportImageSequence/libs/libtiff/include",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"8DA4CF96-758C-4523-A4CF-84FD0DBFCE04": {
+			"explicitFileType": "sourcecode.c.h",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "buffer.h",
+			"path": "../../../addons/ofxPoco/libs/openssl/include/openssl/buffer.h",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"903F70F4-0323-4D34-B42A-56DEFF4E9D44": {
+			"explicitFileType": "sourcecode.c.h",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "tiffio.h",
+			"path": "../../../addons/ofxExportImageSequence/libs/libtiff/include/tiffio.h",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"94A05A8A-50DA-418E-ADBC-CF2210BD0EEF": {
+			"explicitFileType": "sourcecode.c.h",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "particle.hpp",
+			"path": "src/particle.hpp",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"95E6BFFC-5BAD-4CDC-A1B3-D3E559919936": {
+			"explicitFileType": "sourcecode.c.h",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "ssl2.h",
+			"path": "../../../addons/ofxPoco/libs/openssl/include/openssl/ssl2.h",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"97A67737-C27F-4DBD-8EBB-C0E1247CB2F7": {
+			"explicitFileType": "sourcecode.c.h",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "ssl3.h",
+			"path": "../../../addons/ofxPoco/libs/openssl/include/openssl/ssl3.h",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"97AFCBCB-CAD6-4BCC-9B82-94A5A98A5707": {
+			"fileRef": "3AC6099D-EC77-4B22-8FBD-717E9AE6B21A",
+			"isa": "PBXBuildFile"
+		},
+		"97E0F91B-871D-41A6-9206-B9053419282D": {
+			"children": [
+				"84C4DCAE-CEB2-4062-970A-4739315BF606"
+			],
+			"isa": "PBXGroup",
+			"name": "libs",
+			"path": "../../../addons/ofxExportImageSequence/libs",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"9976E084-ABE4-4589-8B9E-DA594254A331": {
+			"explicitFileType": "sourcecode.c.h",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "txt_db.h",
+			"path": "../../../addons/ofxPoco/libs/openssl/include/openssl/txt_db.h",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"9A62385E-82EB-4EB7-99E6-5A8F4CBF1AC4": {
+			"explicitFileType": "sourcecode.c.h",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "e_os2.h",
+			"path": "../../../addons/ofxPoco/libs/openssl/include/openssl/e_os2.h",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"9E32CABB-E4F4-40BD-93C5-3C670BA5B053": {
+			"explicitFileType": "sourcecode.c.h",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "ecdsa.h",
+			"path": "../../../addons/ofxPoco/libs/openssl/include/openssl/ecdsa.h",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"9FF54AC6-E2E4-4728-A5DA-9127887731F8": {
+			"explicitFileType": "sourcecode.c.h",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "des.h",
+			"path": "../../../addons/ofxPoco/libs/openssl/include/openssl/des.h",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"A556F9BD-9106-4E61-B2FB-04C2E3EAE512": {
+			"explicitFileType": "sourcecode.c.h",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "opensslv.h",
+			"path": "../../../addons/ofxPoco/libs/openssl/include/openssl/opensslv.h",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"A60FB00D-29EE-4B14-975E-80822913A603": {
+			"explicitFileType": "sourcecode.c.h",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "async.h",
+			"path": "../../../addons/ofxPoco/libs/openssl/include/openssl/async.h",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"AA807E85-D202-4649-905D-961503AB6D8E": {
+			"explicitFileType": "sourcecode.c.h",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "opensslconf_osx.h",
+			"path": "../../../addons/ofxPoco/libs/openssl/include/openssl/opensslconf_osx.h",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"AC62E5CC-85B9-4BEF-9E75-72B9F0D498BF": {
+			"explicitFileType": "sourcecode.c.h",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "lhash.h",
+			"path": "../../../addons/ofxPoco/libs/openssl/include/openssl/lhash.h",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"AD5F6545-D1A7-461B-A916-C08032724C7D": {
+			"explicitFileType": "sourcecode.c.h",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "ebcdic.h",
+			"path": "../../../addons/ofxPoco/libs/openssl/include/openssl/ebcdic.h",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"AE4BE8E8-FC3E-4A19-97F5-F0C450A49A68": {
+			"explicitFileType": "sourcecode.c.h",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "sha.h",
+			"path": "../../../addons/ofxPoco/libs/openssl/include/openssl/sha.h",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"AE602A34-207B-407E-9AE6-23CD98339BC2": {
+			"explicitFileType": "sourcecode.c.h",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "x509v3.h",
+			"path": "../../../addons/ofxPoco/libs/openssl/include/openssl/x509v3.h",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"AFC7F0AE-6BB4-4C2C-A5BB-6D2BE999F2C9": {
+			"children": [
+				"DA1699A4-95E8-448D-8293-895941EC88E6"
+			],
+			"isa": "PBXGroup",
+			"name": "ofxImageSequenceExport",
+			"path": "../../../addons/ofxImageSequenceExport",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"B1AD2777-B243-4885-9088-A7552ABFFC80": {
+			"explicitFileType": "sourcecode.c.h",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "pkcs12.h",
+			"path": "../../../addons/ofxPoco/libs/openssl/include/openssl/pkcs12.h",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"B1C85272-5E2D-405D-BFBE-7CADFD0D1C5A": {
+			"explicitFileType": "sourcecode.c.h",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "md4.h",
+			"path": "../../../addons/ofxPoco/libs/openssl/include/openssl/md4.h",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"B32C515F-C158-43D7-9A07-3984B05DF62D": {
+			"explicitFileType": "sourcecode.c.h",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "ct.h",
+			"path": "../../../addons/ofxPoco/libs/openssl/include/openssl/ct.h",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"B4971426-B4B6-443E-88DE-4B871C279CC2": {
+			"explicitFileType": "sourcecode.c.h",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "ofxExportImageSequence.h",
+			"path": "../../../addons/ofxExportImageSequence/src/ofxExportImageSequence.h",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"B49B3F23-B40E-487F-8049-F9C454890C2C": {
+			"explicitFileType": "sourcecode.c.h",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "rc2.h",
+			"path": "../../../addons/ofxPoco/libs/openssl/include/openssl/rc2.h",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"B93A6C6A-60E9-4C4D-9BCA-D0924A52712D": {
+			"children": [
+				"4369046D-3707-4CF8-A7BC-A37961525627"
+			],
+			"isa": "PBXGroup",
+			"name": "openssl",
+			"path": "../../../addons/ofxPoco/libs/openssl",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"BA78FF73-2630-46B4-92FB-92DACA246929": {
+			"explicitFileType": "sourcecode.c.h",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "ts.h",
+			"path": "../../../addons/ofxPoco/libs/openssl/include/openssl/ts.h",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"BB4B014C10F69532006C3DED": {
+			"children": [
+				"3B759575-7FD1-4ACF-807E-30672616F7E8",
+				"AFC7F0AE-6BB4-4C2C-A5BB-6D2BE999F2C9",
+				"24CB5629-B35A-464E-BEF1-B9004696872D"
+			],
+			"isa": "PBXGroup",
+			"name": "addons",
+			"path": "../../../addons",
+			"sourceTree": "<group>"
+		},
+		"BFF9814A-A0BC-4906-8ECD-49412C36026D": {
+			"explicitFileType": "sourcecode.c.h",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "bio.h",
+			"path": "../../../addons/ofxPoco/libs/openssl/include/openssl/bio.h",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"C25419D3-A509-43BE-A49E-DC95CF45CCFC": {
+			"explicitFileType": "sourcecode.c.h",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "comp.h",
+			"path": "../../../addons/ofxPoco/libs/openssl/include/openssl/comp.h",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"C5F1A08B-9EB4-46D2-A1A8-EB9C8F47C9BC": {
+			"explicitFileType": "sourcecode.c.h",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "srp.h",
+			"path": "../../../addons/ofxPoco/libs/openssl/include/openssl/srp.h",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"CFA5D899-D7D2-4F08-BAF0-8DCDA31F1864": {
+			"explicitFileType": "sourcecode.c.h",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "md2.h",
+			"path": "../../../addons/ofxPoco/libs/openssl/include/openssl/md2.h",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"CFCE20BB-D99F-4C12-AFF2-C8CFF441EBB7": {
+			"explicitFileType": "sourcecode.c.h",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "whrlpool.h",
+			"path": "../../../addons/ofxPoco/libs/openssl/include/openssl/whrlpool.h",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"D2227CD7-CA6E-45B9-8E10-F25BD3CD8F8F": {
+			"explicitFileType": "sourcecode.c.h",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "idea.h",
+			"path": "../../../addons/ofxPoco/libs/openssl/include/openssl/idea.h",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"D25E303A-8992-4B88-A083-1ABBAAB8483C": {
+			"explicitFileType": "sourcecode.c.h",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "asn1t.h",
+			"path": "../../../addons/ofxPoco/libs/openssl/include/openssl/asn1t.h",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"D670FD84-A05F-4D48-8B17-51B5180727F4": {
+			"fileRef": "75A11297-8D95-4D92-B6BB-94A6028D4A8C",
+			"isa": "PBXBuildFile"
+		},
+		"D6E6774F-5742-42CB-877F-CA550702C900": {
+			"explicitFileType": "sourcecode.c.h",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "evp.h",
+			"path": "../../../addons/ofxPoco/libs/openssl/include/openssl/evp.h",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"D782FCB6-2EF6-4B76-8704-AE668B2F422D": {
+			"explicitFileType": "sourcecode.c.h",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "hmac.h",
+			"path": "../../../addons/ofxPoco/libs/openssl/include/openssl/hmac.h",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"D8F63EA7-87C7-415E-8E9F-08A075CF50BA": {
+			"explicitFileType": "sourcecode.c.h",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "asn1_mac.h",
+			"path": "../../../addons/ofxPoco/libs/openssl/include/openssl/asn1_mac.h",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"DA1699A4-95E8-448D-8293-895941EC88E6": {
+			"children": [
+				"3AC6099D-EC77-4B22-8FBD-717E9AE6B21A",
+				"2F8EE760-A878-4154-AE20-73047ACB63EA"
+			],
+			"isa": "PBXGroup",
+			"name": "src",
+			"path": "../../../addons/ofxImageSequenceExport/src",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"DC1FD2B0-B024-47B6-B827-BBFC987C06BB": {
+			"explicitFileType": "sourcecode.c.h",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "rand.h",
+			"path": "../../../addons/ofxPoco/libs/openssl/include/openssl/rand.h",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"DD020AC3-8FAD-4157-8AE2-BEF9F4E2C4C9": {
+			"explicitFileType": "sourcecode.c.h",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "cmac.h",
+			"path": "../../../addons/ofxPoco/libs/openssl/include/openssl/cmac.h",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"DD79B390-1FE6-435B-9EC0-D77A77D4592E": {
+			"explicitFileType": "sourcecode.c.h",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "ofxXmlPoco.h",
+			"path": "../../../addons/ofxPoco/src/ofxXmlPoco.h",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"E42962A92163ECCD00A6A9E2": {
+			"alwaysOutOfDate": "1",
+			"buildActionMask": "2147483647",
+			"files": [],
+			"inputPaths": [],
+			"isa": "PBXShellScriptBuildPhase",
+			"name": "Run Script — Compile OF",
+			"outputPaths": [],
+			"runOnlyForDeploymentPostprocessing": "0",
+			"shellPath": "/bin/sh",
+			"shellScript": "echo \"💾 Compiling Openframeworks\"\nxcodebuild -project \"$OF_PATH/libs/openFrameworksCompiled/project/osx/openFrameworksLib.xcodeproj\" -target openFrameworks -configuration \"${CONFIGURATION}\"  CLANG_CXX_LANGUAGE_STANDARD=$CLANG_CXX_LANGUAGE_STANDARD MACOSX_DEPLOYMENT_TARGET=$MACOSX_DEPLOYMENT_TARGET GCC_PREPROCESSOR_DEFINITIONS=$USER_PREPROCESSOR_DEFINITIONS\n",
+			"showEnvVarsInLog": "0"
+		},
+		"E4A5B60F29BAAAE400C2D356": {
+			"buildActionMask": "2147483647",
+			"dstPath": "",
+			"dstSubfolderSpec": "6",
+			"files": [],
+			"isa": "PBXCopyFilesBuildPhase",
+			"runOnlyForDeploymentPostprocessing": "0"
+		},
+		"E4B69B4A0A3A1720003C02F2": {
+			"children": [
+				"191CD6FA2847E21E0085CBB6",
+				"E4B6FCAD0C3E899E008CF71C",
+				"E4EB6923138AFD0F00A09F29",
+				"E4B69E1C0A3A1BDC003C02F2",
+				"191EF70929D778A400F35F26",
+				"BB4B014C10F69532006C3DED",
+				"E4B69B5B0A3A1756003C02F2"
+			],
+			"isa": "PBXGroup",
+			"sourceTree": "<group>"
+		},
+		"E4B69B4C0A3A1720003C02F2": {
+			"attributes": {
+				"LastUpgradeCheck": "0600"
+			},
+			"buildConfigurationList": "E4B69B4D0A3A1720003C02F2",
+			"compatibilityVersion": "Xcode 3.2",
+			"developmentRegion": "en",
+			"hasScannedForEncodings": "0",
+			"isa": "PBXProject",
+			"knownRegions": [
+				"en",
+				"Base"
+			],
+			"mainGroup": "E4B69B4A0A3A1720003C02F2",
+			"productRefGroup": "E4B69B4A0A3A1720003C02F2",
+			"projectDirPath": "",
+			"projectRoot": "",
+			"targets": [
+				"E4B69B5A0A3A1756003C02F2"
+			]
+		},
+		"E4B69B4D0A3A1720003C02F2": {
+			"buildConfigurations": [
+				"E4B69B4E0A3A1720003C02F2",
+				"E4B69B4F0A3A1720003C02F2"
+			],
+			"defaultConfigurationIsVisible": "0",
+			"defaultConfigurationName": "Release",
+			"isa": "XCConfigurationList"
+		},
+		"E4B69B4E0A3A1720003C02F2": {
+			"baseConfigurationReference": "E4EB6923138AFD0F00A09F29",
+			"buildSettings": {
+				"CODE_SIGN_ENTITLEMENTS": "of.entitlements",
+				"COPY_PHASE_STRIP": "NO",
+				"ENABLE_TESTABILITY": "YES",
+				"GCC_OPTIMIZATION_LEVEL": "0",
+				"GCC_WARN_UNUSED_VARIABLE": "NO",
+				"HEADER_SEARCH_PATHS": [
+					"$(OF_CORE_HEADERS)",
+					"src"
+				],
+				"OTHER_CPLUSPLUSFLAGS": "-D__MACOSX_CORE__"
+			},
+			"isa": "XCBuildConfiguration",
+			"name": "Debug"
+		},
+		"E4B69B4F0A3A1720003C02F2": {
+			"baseConfigurationReference": "E4EB6923138AFD0F00A09F29",
+			"buildSettings": {
+				"CODE_SIGN_ENTITLEMENTS": "of.entitlements",
+				"COPY_PHASE_STRIP": "YES",
+				"GCC_OPTIMIZATION_LEVEL": "3",
+				"GCC_UNROLL_LOOPS": "YES",
+				"HEADER_SEARCH_PATHS": [
+					"$(OF_CORE_HEADERS)",
+					"src"
+				],
+				"OTHER_CPLUSPLUSFLAGS": "-D__MACOSX_CORE__"
+			},
+			"isa": "XCBuildConfiguration",
+			"name": "Release"
+		},
+		"E4B69B580A3A1756003C02F2": {
+			"buildActionMask": "2147483647",
+			"files": [
+				"E4B69E200A3A1BDC003C02F2",
+				"E4B69E210A3A1BDC003C02F2",
+				"F67EA5EE-2EA5-4583-BC75-B5490F6820E3",
+				"D670FD84-A05F-4D48-8B17-51B5180727F4",
+				"97AFCBCB-CAD6-4BCC-9B82-94A5A98A5707",
+				"55D86F5D-58A6-4C2E-A89B-8ED497F8C717"
+			],
+			"isa": "PBXSourcesBuildPhase",
+			"runOnlyForDeploymentPostprocessing": "0"
+		},
+		"E4B69B590A3A1756003C02F2": {
+			"buildActionMask": "2147483647",
+			"files": [],
+			"isa": "PBXFrameworksBuildPhase",
+			"runOnlyForDeploymentPostprocessing": "0"
+		},
+		"E4B69B5A0A3A1756003C02F2": {
+			"buildConfigurationList": "E4B69B5F0A3A1757003C02F2",
+			"buildPhases": [
+				"E42962A92163ECCD00A6A9E2",
+				"E4B69B580A3A1756003C02F2",
+				"E4B69B590A3A1756003C02F2",
+				"E4C2427710CC5ABF004149E2",
+				"E4A5B60F29BAAAE400C2D356",
+				"19B789C429E5AB4A0082E9B8"
+			],
+			"buildRules": [],
+			"dependencies": [],
+			"isa": "PBXNativeTarget",
+			"name": "of_ImageSequence",
+			"productName": "myOFApp",
+			"productReference": "E4B69B5B0A3A1756003C02F2",
+			"productType": "com.apple.product-type.application"
+		},
+		"E4B69B5B0A3A1756003C02F2": {
+			"explicitFileType": "wrapper.application",
+			"includeInIndex": "0",
+			"isa": "PBXFileReference",
+			"path": "of_ImageSequenceDebug.app",
+			"sourceTree": "BUILT_PRODUCTS_DIR"
+		},
+		"E4B69B5F0A3A1757003C02F2": {
+			"buildConfigurations": [
+				"E4B69B600A3A1757003C02F2",
+				"E4B69B610A3A1757003C02F2"
+			],
+			"defaultConfigurationIsVisible": "0",
+			"defaultConfigurationName": "Release",
+			"isa": "XCConfigurationList"
+		},
+		"E4B69B600A3A1757003C02F2": {
+			"baseConfigurationReference": "E4EB6923138AFD0F00A09F29",
+			"buildSettings": {
+				"ARCHS": "$(ARCHS_STANDARD)",
+				"COPY_PHASE_STRIP": "NO",
+				"FRAMEWORK_SEARCH_PATHS": "$(inherited)",
+				"GCC_DYNAMIC_NO_PIC": "NO",
+				"HEADER_SEARCH_PATHS": [
+					"$(OF_CORE_HEADERS)",
+					"src",
+					"src",
+					"../../../addons/ofxExportImageSequence/libs",
+					"../../../addons/ofxExportImageSequence/libs/libtiff",
+					"../../../addons/ofxExportImageSequence/libs/libtiff/include",
+					"../../../addons/ofxExportImageSequence/libs/libtiff/lib",
+					"../../../addons/ofxExportImageSequence/libs/libtiff/lib/osx",
+					"../../../addons/ofxExportImageSequence/src",
+					"../../../addons/ofxImageSequenceExport/src",
+					"../../../addons/ofxPoco/libs/poco/include",
+					"../../../addons/ofxPoco/src",
+					"../../../addons/ofxPoco/libs/openssl/include"
+				],
+				"LIBRARY_SEARCH_PATHS": "$(inherited)",
+				"OTHER_LDFLAGS": [
+					"$(OF_CORE_LIBS)",
+					"$(OF_CORE_FRAMEWORKS)",
+					"$(LIB_OF_DEBUG)",
+					"../../../addons/ofxExportImageSequence/libs/libtiff/lib/osx/libtiff.a",
+					"../../../addons/ofxPoco/libs/poco/lib/osx/PocoNetSSL.a",
+					"../../../addons/ofxPoco/libs/poco/lib/osx/PocoNet.a",
+					"../../../addons/ofxPoco/libs/poco/lib/osx/PocoCrypto.a",
+					"../../../addons/ofxPoco/libs/poco/lib/osx/PocoUtil.a",
+					"../../../addons/ofxPoco/libs/poco/lib/osx/PocoJSON.a",
+					"../../../addons/ofxPoco/libs/poco/lib/osx/PocoXML.a",
+					"../../../addons/ofxPoco/libs/poco/lib/osx/PocoFoundation.a",
+					"../../../addons/ofxPoco/libs/openssl/lib/osx/crypto.a",
+					"../../../addons/ofxPoco/libs/openssl/lib/osx/ssl.a"
+				]
+			},
+			"isa": "XCBuildConfiguration",
+			"name": "Debug"
+		},
+		"E4B69B610A3A1757003C02F2": {
+			"baseConfigurationReference": "E4EB6923138AFD0F00A09F29",
+			"buildSettings": {
+				"ARCHS": "$(ARCHS_STANDARD)",
+				"COPY_PHASE_STRIP": "YES",
+				"FRAMEWORK_SEARCH_PATHS": "$(inherited)",
+				"HEADER_SEARCH_PATHS": [
+					"$(OF_CORE_HEADERS)",
+					"src",
+					"src",
+					"../../../addons/ofxExportImageSequence/libs",
+					"../../../addons/ofxExportImageSequence/libs/libtiff",
+					"../../../addons/ofxExportImageSequence/libs/libtiff/include",
+					"../../../addons/ofxExportImageSequence/libs/libtiff/lib",
+					"../../../addons/ofxExportImageSequence/libs/libtiff/lib/osx",
+					"../../../addons/ofxExportImageSequence/src",
+					"../../../addons/ofxImageSequenceExport/src",
+					"../../../addons/ofxPoco/libs/poco/include",
+					"../../../addons/ofxPoco/src",
+					"../../../addons/ofxPoco/libs/openssl/include"
+				],
+				"LIBRARY_SEARCH_PATHS": "$(inherited)",
+				"OTHER_LDFLAGS": [
+					"$(OF_CORE_LIBS)",
+					"$(OF_CORE_FRAMEWORKS)",
+					"$(LIB_OF)",
+					"../../../addons/ofxExportImageSequence/libs/libtiff/lib/osx/libtiff.a",
+					"../../../addons/ofxPoco/libs/poco/lib/osx/PocoNetSSL.a",
+					"../../../addons/ofxPoco/libs/poco/lib/osx/PocoNet.a",
+					"../../../addons/ofxPoco/libs/poco/lib/osx/PocoCrypto.a",
+					"../../../addons/ofxPoco/libs/poco/lib/osx/PocoUtil.a",
+					"../../../addons/ofxPoco/libs/poco/lib/osx/PocoJSON.a",
+					"../../../addons/ofxPoco/libs/poco/lib/osx/PocoXML.a",
+					"../../../addons/ofxPoco/libs/poco/lib/osx/PocoFoundation.a",
+					"../../../addons/ofxPoco/libs/openssl/lib/osx/crypto.a",
+					"../../../addons/ofxPoco/libs/openssl/lib/osx/ssl.a"
+				],
+				"baseConfigurationReference": "E4EB6923138AFD0F00A09F29"
+			},
+			"isa": "XCBuildConfiguration",
+			"name": "Release"
+		},
+		"E4B69E1C0A3A1BDC003C02F2": {
+			"children": [
+				"E4B69E1D0A3A1BDC003C02F2",
+				"E4B69E1E0A3A1BDC003C02F2",
+				"E4B69E1F0A3A1BDC003C02F2",
+				"30A315CE-2970-4CB7-9883-96F07C19A119",
+				"94A05A8A-50DA-418E-ADBC-CF2210BD0EEF"
+			],
+			"isa": "PBXGroup",
+			"path": "src",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"E4B69E1D0A3A1BDC003C02F2": {
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"lastKnownFileType": "sourcecode.cpp.cpp",
+			"name": "main.cpp",
+			"path": "src/main.cpp",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"E4B69E1E0A3A1BDC003C02F2": {
+			"explicitFileType": "sourcecode.cpp.cpp",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "ofApp.cpp",
+			"path": "src/ofApp.cpp",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"E4B69E1F0A3A1BDC003C02F2": {
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"lastKnownFileType": "sourcecode.c.h",
+			"name": "ofApp.h",
+			"path": "src/ofApp.h",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"E4B69E200A3A1BDC003C02F2": {
+			"fileRef": "E4B69E1D0A3A1BDC003C02F2",
+			"isa": "PBXBuildFile"
+		},
+		"E4B69E210A3A1BDC003C02F2": {
+			"fileRef": "E4B69E1E0A3A1BDC003C02F2",
+			"isa": "PBXBuildFile"
+		},
+		"E4B6FCAD0C3E899E008CF71C": {
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"lastKnownFileType": "text.plist.xml",
+			"path": "openFrameworks-Info.plist",
+			"sourceTree": "<group>"
+		},
+		"E4C2427710CC5ABF004149E2": {
+			"buildActionMask": "2147483647",
+			"dstPath": "",
+			"dstSubfolderSpec": "10",
+			"files": [],
+			"isa": "PBXCopyFilesBuildPhase",
+			"runOnlyForDeploymentPostprocessing": "0"
+		},
+		"E4EB6923138AFD0F00A09F29": {
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"lastKnownFileType": "text.xcconfig",
+			"path": "Project.xcconfig",
+			"sourceTree": "<group>"
+		},
+		"E8383918-7E76-4644-AE61-B58F126610EB": {
+			"explicitFileType": "sourcecode.c.h",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "asn1.h",
+			"path": "../../../addons/ofxPoco/libs/openssl/include/openssl/asn1.h",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"ED93E6AE-F72F-480D-9620-F68A61DF0460": {
+			"explicitFileType": "sourcecode.c.h",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "conf.h",
+			"path": "../../../addons/ofxPoco/libs/openssl/include/openssl/conf.h",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"EE7FEFD4-247F-47F1-ACC9-A54585D8741E": {
+			"explicitFileType": "sourcecode.c.h",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "modes.h",
+			"path": "../../../addons/ofxPoco/libs/openssl/include/openssl/modes.h",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"EEDD02D1-0EA3-485F-820B-FA258BB031F5": {
+			"explicitFileType": "sourcecode.c.h",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "ossl_typ.h",
+			"path": "../../../addons/ofxPoco/libs/openssl/include/openssl/ossl_typ.h",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"F01388D5-887C-4D04-95BA-E077EB923A00": {
+			"explicitFileType": "sourcecode.c.h",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "rc4.h",
+			"path": "../../../addons/ofxPoco/libs/openssl/include/openssl/rc4.h",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"F2963139-2461-4130-9A73-341A98980825": {
+			"children": [
+				"B93A6C6A-60E9-4C4D-9BCA-D0924A52712D"
+			],
+			"isa": "PBXGroup",
+			"name": "libs",
+			"path": "../../../addons/ofxPoco/libs",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"F2EAB537-7B54-4B66-A4CE-226F3DAABE45": {
+			"explicitFileType": "sourcecode.c.h",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "seed.h",
+			"path": "../../../addons/ofxPoco/libs/openssl/include/openssl/seed.h",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"F3113A0B-67D0-4901-83C0-431B6530302E": {
+			"children": [
+				"75A11297-8D95-4D92-B6BB-94A6028D4A8C",
+				"B4971426-B4B6-443E-88DE-4B871C279CC2"
+			],
+			"isa": "PBXGroup",
+			"name": "src",
+			"path": "../../../addons/ofxExportImageSequence/src",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"F33740C7-12A8-4F0C-95D5-3F785DCAC8E7": {
+			"explicitFileType": "sourcecode.c.h",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "blowfish.h",
+			"path": "../../../addons/ofxPoco/libs/openssl/include/openssl/blowfish.h",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"F6746CC8-402F-470C-8E17-79100682FFC2": {
+			"explicitFileType": "sourcecode.c.h",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "rsa.h",
+			"path": "../../../addons/ofxPoco/libs/openssl/include/openssl/rsa.h",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"F67EA5EE-2EA5-4583-BC75-B5490F6820E3": {
+			"fileRef": "30A315CE-2970-4CB7-9883-96F07C19A119",
+			"isa": "PBXBuildFile"
+		},
+		"F6F70B96-C7E9-43AB-98E2-BAFBDB765DE3": {
+			"explicitFileType": "sourcecode.c.h",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "tiff.h",
+			"path": "../../../addons/ofxExportImageSequence/libs/libtiff/include/tiff.h",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"F70DF46F-C3E4-4D55-9E49-8DAB10C552C9": {
+			"explicitFileType": "sourcecode.c.h",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "kdf.h",
+			"path": "../../../addons/ofxPoco/libs/openssl/include/openssl/kdf.h",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"F9997F93-060C-4428-941E-8DFE54EF965E": {
+			"explicitFileType": "sourcecode.c.h",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "stack.h",
+			"path": "../../../addons/ofxPoco/libs/openssl/include/openssl/stack.h",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"FD09A201-EF22-4F31-A109-ED9A266F5604": {
+			"explicitFileType": "sourcecode.c.h",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "tiffvers.h",
+			"path": "../../../addons/ofxExportImageSequence/libs/libtiff/include/tiffvers.h",
+			"sourceTree": "SOURCE_ROOT"
+		}
+	},
+	"openFrameworksProjectGeneratorVersion": "21",
+	"rootObject": "E4B69B4C0A3A1720003C02F2"
+}
