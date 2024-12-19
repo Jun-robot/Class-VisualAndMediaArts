@@ -22,19 +22,17 @@ ser = serial.Serial(
 	#rtscts = 0,
 )
 
-i=0
+
+led_list = [(35, 10, 30) for _ in range(60)]
+
+def convert_led_list_to_array(led_list):
+	return [value for rgb in led_list for value in rgb]
+
 while True:
 	startbyte=[250] #スタートバイトは250
 	send(startbyte)
-	i+=1
-	mylist = list(range(180))
+	send(convert_led_list_to_array(led_list))
 
-	mylist[0]=(30+i)%60
-	mylist[1]=(42+i)%60
-	mylist[2]=(53+i)%60
-	mylist[3]=(21+i)%60
-	send(mylist)
-	# sleep(0.016)
 	print("a")
 	sleep(0.015)
 
