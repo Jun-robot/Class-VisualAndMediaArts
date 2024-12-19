@@ -1,5 +1,5 @@
 #include "ofApp.h"
-//#define takeMovie
+#define takeMovie
 
 //--------------------------------------------------------------
 void ofApp::setup(){
