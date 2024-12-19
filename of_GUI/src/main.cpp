@@ -9,6 +9,7 @@ int main( ){
     
     settings.multiMonitorFullScreen = true;
     settings.windowMode = OF_FULLSCREEN;
+    
     auto window = ofCreateWindow(settings);
     
 //    ofSetupOpenGL(&setting, 38 40, 1080, OF_FULLSCREEN);

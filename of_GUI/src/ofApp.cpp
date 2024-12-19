@@ -19,8 +19,6 @@ void ofApp::setup(){
     gui.add(sendC.set("sendC", 3, 0, 60));
     gui.add(sendD.set("sendD", 3, 0, 60));
 
-
-    
     fbo.allocate(mywidth, myheigh);
     
     serial.listDevices();

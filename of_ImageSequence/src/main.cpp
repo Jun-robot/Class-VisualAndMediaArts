@@ -5,13 +5,15 @@
 int main( ){
 
 	//Use ofGLFWWindowSettings for more options like multi-monitor fullscreen
-	ofGLWindowSettings settings;
-	settings.setSize(1024, 768);
-	settings.windowMode = OF_WINDOW; //can also be OF_FULLSCREEN
+	ofGLFWWindowSettings settings;
+    
+//	settings.setSize(1024, 768);
+//	settings.windowMode = OF_WINDOW; //can also be OF_FULLSCREEN
+    settings.multiMonitorFullScreen = true;
+    settings.windowMode = OF_FULLSCREEN;
 
 	auto window = ofCreateWindow(settings);
 
-	ofRunApp(window, make_shared<ofApp>());
+	ofRunApp(window, std::make_shared<ofApp>());
 	ofRunMainLoop();
-
 }

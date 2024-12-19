@@ -1,14 +1,15 @@
 //
 //  particle.hpp
-//  oF_fukusyuu
+//  of_GUI
 //
-//  Created by 齋藤淳平 on 2024/10/11.
+//  Created by 齋藤淳平 on 2024/11/08.
 //
 
 #ifndef particle_hpp
 #define particle_hpp
 
 #include <stdio.h>
+
 //#include "ofApp.h" これは循環参照になる、
 #include "ofMain.h"
 
@@ -18,16 +19,21 @@ public:
     
     //member
     ofVec2f pos;
+    int posN=60;
+    ofVec2f prePos[60];
     ofVec2f speed;
+    ofVec2f speedNoise;
     ofColor color;
-    float radius;
+    float gain;
     
     //method
-    void setup();
+    void setup(int x, int y, float speedX, float speedY);
     void update();
-    void draw();
+    void setSpeedNoise();
+    void setSpeedGain(float _gain);
+    void draw(float rad);
+    void setColor(ofColor mycolor);
 };
-
 
 
 #endif /* particle_hpp */
