@@ -13,7 +13,7 @@ def send( buf ):
 	ser.flush() #全て送信するまで待機
 
 ser = serial.Serial(
-	port = "/dev/cu.wchusbserial10",
+	port = "/dev/cu.wchusbserial110",
 	baudrate = 115200,
 	parity = serial.PARITY_NONE,
 	bytesize = serial.EIGHTBITS,
@@ -27,7 +27,7 @@ led_list = [(0, 0, 0) for _ in range(60)]
 def convert_led_list_to_array(led_list):
 	return [value for rgb in led_list for value in rgb]
 
-video_path = 'video3.mp4'  # ここに動画ファイルのパスを指定
+video_path = 'video2.mp4'  # ここに動画ファイルのパスを指定
 cap = cv2.VideoCapture(video_path)
 if not cap.isOpened():
 	print("動画を開けませんでした。")

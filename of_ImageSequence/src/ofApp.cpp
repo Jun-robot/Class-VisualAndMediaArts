@@ -28,10 +28,10 @@ void ofApp::setup(){
     serial.listDevices();
     serial.setup("/dev/tty.wchusbserial110", 115200);
     
-    for(int i=0;i<200;i++){
+    for(int i=0;i<80;i++){
         Particle tmp;
         ofColor hoge;
-        hoge.setHsb(ofRandom(0, 250), 180, 250); hoge.a=200;
+        hoge.setHsb(ofRandom(70, 210), 180, 250); hoge.a=200;
         tmp.setup(ofRandom(mywidth), ofRandom(myheigh), ofRandom(-3,3) , ofRandom(-3,3), hoge);
         p.push_back(tmp);
     }
