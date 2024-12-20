@@ -11,11 +11,11 @@ Particle::Particle(){
     
 }
 
-void Particle::setup(int x, int y, float speedX, float speedY){
+void Particle::setup(int x, int y, float speedX, float speedY, ofColor clr){
     pos.set(x, y);
 //    speed.set(ofRandom(-3,3) , ofRandom(-3,3));
     speed.set(speedX, speedY);
-    color.set(0,0,0);
+    color.set(clr);
     setSpeedNoise();
     for(int n=0; n<posN; n++){
         prePos[n].set(pos.x, pos.y);
@@ -44,16 +44,11 @@ void Particle::setSpeedGain(float gain_){
     gain = gain_;
 }
 
-void Particle::setColor(ofColor mycolor){
-    mycolor.a = 220;
-    color.set(mycolor);
-}
-
 void Particle::draw(float rad){
     ofDrawCircle(pos.x, pos.y, rad);
     
-    ofSetColor(255,255,255,250);
-    for(int n=0; n<posN; n++){
-        ofDrawCircle(prePos[n].x, prePos[n].y, rad-n*0.22);
-    }
+//    ofSetColor(color);
+//    for(int n=0; n<posN; n++){
+//        ofDrawCircle(prePos[n].x, prePos[n].y, rad-n*0.22);
+//    }
 }

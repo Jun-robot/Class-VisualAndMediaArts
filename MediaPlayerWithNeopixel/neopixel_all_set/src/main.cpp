@@ -41,7 +41,7 @@ void loop() {
 
 	for(int i=0; i<60; i++){
 
-		led_set_rgb(0, i, ser_ctrl.data[i*3], ser_ctrl.data[i*3+1], ser_ctrl.data[i*3+2]);
+		led_set_rgb(0, i, ser_ctrl.data[i*3+2], ser_ctrl.data[i*3+1], ser_ctrl.data[i*3]);
 
 		// if(ser_ctrl.data[i]!=0){
 		// 	if(i<2)led_set(0, ser_ctrl.data[i], 0, 0, 255);

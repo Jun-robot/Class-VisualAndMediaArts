@@ -54,7 +54,8 @@ class ofApp : public ofBaseApp{
     
     //FrameBufferObject
     ofFbo fbo;
-    int mywidth = 1116; //1512;
+//    int mywidth = 1116; //1512;
+    int mywidth = 1180;
     int myheigh = 820; //982;
     
     //Serial

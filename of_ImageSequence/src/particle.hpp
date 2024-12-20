@@ -27,12 +27,11 @@ public:
     float gain;
     
     //method
-    void setup(int x, int y, float speedX, float speedY);
+    void setup(int x, int y, float speedX, float speedY, ofColor clr);
     void update();
     void setSpeedNoise();
     void setSpeedGain(float _gain);
     void draw(float rad);
-    void setColor(ofColor mycolor);
 };
 
 

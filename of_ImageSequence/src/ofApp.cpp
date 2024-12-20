@@ -11,7 +11,7 @@ void ofApp::setup(){
     
     gui.setup();
     gui.setPosition(50, 500);
-    gui.add(backgroundColor.set("BGColor", ofColor(50,50,50), ofColor(0,0,0), ofColor(255,255,255)));
+    gui.add(backgroundColor.set("BGColor", ofColor(240,240,250), ofColor(0,0,0), ofColor(255,255,255)));
     gui.add(particleColor.set("particleColor", ofColor(240,240,240), ofColor(0,0,0), ofColor(255,255,255)));
     gui.add(radius.set("radius", 20.0, 0.0, 50.0));
     gui.add(particleNum.set("particleNum", 3, 0, 1000.0));
@@ -28,10 +28,14 @@ void ofApp::setup(){
     serial.listDevices();
     serial.setup("/dev/tty.wchusbserial110", 115200);
     
-    Particle tmp;
-    tmp.setup(mywidth/2, myheigh/2, ofRandom(-3,3) , ofRandom(-3,3));
-    p.push_back(tmp);
-  
+    for(int i=0;i<200;i++){
+        Particle tmp;
+        ofColor hoge;
+        hoge.setHsb(ofRandom(0, 250), 180, 250); hoge.a=200;
+        tmp.setup(ofRandom(mywidth), ofRandom(myheigh), ofRandom(-3,3) , ofRandom(-3,3), hoge);
+        p.push_back(tmp);
+    }
+    
     exp.setup(mywidth,myheigh+50,60);//--ExportImageSequence--
     
 #ifdef takeMovie
@@ -62,16 +66,20 @@ void ofApp::update(){
     }
     for (int n = p.size()-1; n>=0; --n) {  // 後ろから順にチェック
         if (p[n].pos.x<30 && p[n].pos.y<30) {//左上
+            ofColor tempcolor=p[n].color;
             p.erase(p.begin() + n);
             
             LED foo;
             foo.setup(0, ledSpeed);
+            foo.color=tempcolor;
             l.push_back(foo);
         }else if (p[n].pos.x>mywidth-30 && p[n].pos.y<30) {//右上
+            ofColor tempcolor=p[n].color;
             p.erase(p.begin() + n);
             
             LED foo;
             foo.setup(60, -1.0 * ledSpeed);
+            foo.color=tempcolor;
             l.push_back(foo);
         }
     }
@@ -82,16 +90,18 @@ void ofApp::update(){
     for(int n=l.size()-1; n>=0; --n){
         l[n].update();
         if(l[n].speed>0 && l[n].pos>60){//右上
+            ofColor tempcolor=l[n].color;
             l.erase(l.begin()+n);
             
             Particle tmp;
-            tmp.setup(mywidth-40, 40, ofRandom(-3,0) , ofRandom(0,3));
+            tmp.setup(mywidth-40, 40, ofRandom(-3,0) , ofRandom(0,3), tempcolor);
             p.push_back(tmp);
         }else if(l[n].speed<0 && l[n].pos<-1.0){//左上
+            ofColor tempcolor=l[n].color;
             l.erase(l.begin()+n);
             
             Particle tmp;
-            tmp.setup(40, 40, ofRandom(0,3) , ofRandom(0,3));
+            tmp.setup(40, 40, ofRandom(0,3) , ofRandom(0,3), tempcolor);
             p.push_back(tmp);
         }
     }
@@ -103,8 +113,7 @@ void ofApp::update(){
     ofBackground(backgroundColor);
     
     for(int n=0; n < p.size(); n++){
-        p[n].setColor(particleColor);
-        
+//        p[n].setColor(particleColor);
         ofSetColor(p[n].color);
         p[n].draw( radius );
         
@@ -124,16 +133,18 @@ void ofApp::update(){
     for(int n=0; n<l.size(); n++){
         int a = l[n].getPos()%60;
         LedArray[a] = 1;
+        ofSetColor(l[n].color);
+        ofDrawRectangle(15*a, myheigh+1, 15, 50);
     }
     
-    for(int n=0; n<60; n++){
-        if(LedArray[n]==1){
-            ofSetColor(100, 100, 100);
-        }else{
-            ofSetColor(0, 0, 0);
-        }
-        ofDrawRectangle(15*n, myheigh+1, 15, 50);
-    }
+//    for(int n=0; n<60; n++){
+//        if(LedArray[n]==1){
+//            ofSetColor(100, 100, 100);
+//        }else{
+//            ofSetColor(0, 0, 0);
+//        }
+//        ofDrawRectangle(15*n, myheigh+1, 15, 50);
+//    }
     
     
     fbo.end();
@@ -211,7 +222,9 @@ void ofApp::mouseDragged(int x, int y, int button){
 //--------------------------------------------------------------
 void ofApp::mousePressed(int x, int y, int button){
     Particle tmp;
-    tmp.setup(mywidth/2, myheigh/2, ofRandom(-3,3) , ofRandom(-3,3));
+    ofColor hoge;
+    hoge.setHsb(ofRandom(80, 220), 180, 250); hoge.a=200;
+    tmp.setup(mywidth/2, myheigh/2, ofRandom(-3,3) , ofRandom(-3,3), hoge);
     p.push_back(tmp);
 }
 
